@@ -46,6 +46,178 @@
         </div>
     </nav>
 
+    <!-- Main Page Layout combined with GitHub API Info (Profile Pic and Bio) -->
+    <section class="bgimage" id="home">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                    <!-- GitHub Avatar -->
+                    <img id="github-avatar" class="rounded-circle mb-4" width="200" alt="GitHub Avatar">
+
+                    <!-- Main heading -->
+                    <h2 class="hero_title">Hi, I'm Brandon</h2>
+
+                    <!-- GitHub bio -->
+                    <p id="github-bio" class="hero_desc">Loading bio...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section Layout (with image on the left)-->
+    <section id="about">
+        <div class="container mt-4 pt-4">
+            <h1 class="text-center">About Me</h1>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <img src="images/placeholder1.jpg" class="imageAboutPage" alt="">
+                </div>
+
+                <div class="col-lg-8">
+                    <p>
+                        Need to fill in some text about myself...TODO.
+                    </p>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Interesting Fact #1</li>
+                                <li>Interesting Fact #2</li>
+                                <li>Interesting Fact #3</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Interesting Fact #4</li>
+                                <li>Interesting Fact #5</li>
+                                <li>Interesting Fact #6</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <p>
+                            More rando text about myself.
+                            Maybe another line?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section-->
+    <section id="projects">
+        <div class="container mt-3">
+            <h1 class="text-center">Projects</h1>
+            <div class="row">
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/projectPlaceholder.jpg" alt="Card Image" style="width: 100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Project 1</h4>
+                            <p class="card-text">Project 1 Description</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/projectPlaceholder.jpg" alt="Card Image" style="width: 100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Project 2</h4>
+                            <p class="card-text">Project 2 Description</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/projectPlaceholder.jpg" alt="Card Image" style="width: 100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Project 3</h4>
+                            <p class="card-text">Project 3 Description</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/projectPlaceholder.jpg" alt="Card Image" style="width: 100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Project 4</h4>
+                            <p class="card-text">Project 4 Description</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/projectPlaceholder.jpg" alt="Card Image" style="width: 100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Project 5</h4>
+                            <p class="card-text">Project 5 Description</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/projectPlaceholder.jpg" alt="Card Image" style="width: 100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Project 6</h4>
+                            <p class="card-text">Project 6 Description</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Me Section-->
+     <section id="contact" class="py-5 bg-dark text-white">
+        <div class="container">
+            <h1 class="text-center mb-4">Contact Me</h1>
+            
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="xyz@youremail.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Your Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Write something..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Send Message</button>
+            </form>
+
+        </div>
+     </section>
+
+
     <!-- load javascript after loading all html content -->
     <script src="portfolio.js"></script>
 </body>
