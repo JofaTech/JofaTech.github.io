@@ -22,7 +22,16 @@
 }
 
 .hero_desc {
-    font-size: 2rem;
+    max-width: 600px;
+    /* limits the width */
+    margin: 0 auto;
+    /* centers horizontally */
+    text-align: center;
+    /* centers the text */
+    font-size: 1.3rem;
+    /* optional: adjust font size for readability */
+    line-height: 1.6;
+    /* optional: improves line spacing */
 }
 
 #github-avatar {
@@ -44,7 +53,63 @@
     background-color: black;
 }
 
-/* #contact input,
+/* Make navbar links white */
+.navbarScroll .nav-link {
+    color: white !important;
+    font-size: 1.1rem;
+}
+
+/* Make brand name white */
+.navbarScroll .navbar-brand {
+    color: white !important;
+    font-size: 1.3rem;
+}
+
+/* Change link color on hover */
+.navbarScroll .nav-link:hover {
+    color: #cccccc !important;
+    /* light gray on hover */
+}
+
+/* Prevents navbar from covering section headings when using links */
+section {
+    scroll-margin-top: 70px;
+}
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.card-text {
+    flex-grow: 1;
+}
+
+.card-body .btn {
+    align-self: center;
+    margin-top: 20px;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+#contact input,
 #contact textarea {
     background-color: #222;
     border: 1px solid #555;
@@ -58,4 +123,20 @@
 
 #contact .form-label {
     color: #fff;
-} */
+}
+
+.footer {
+    background-color: #222;
+}
+
+.footer-icon {
+    color: white;
+    margin: 0 15px;
+    font-size: 1.4rem;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.footer-icon:hover {
+    color: #FFD700;
+}

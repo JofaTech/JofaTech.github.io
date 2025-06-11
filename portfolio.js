@@ -18,7 +18,7 @@ fetchGitHubProfile("JofaTech");
 // Darkens navigation bar when scrolling for better visibility
 const header = document.querySelector('.navbar')
 
-window.onscroll = function() {
+window.onscroll = function () {
     var top = window.scrollY;
     if (top >= 100) {
         header.classList.add('navbarDark');
@@ -27,6 +27,7 @@ window.onscroll = function() {
     }
 }
 
+// Contact Form Functionality (let's user input their information and send contact request to my email)
 document.getElementById("contactForm").addEventListener("submit", function (event) {
     event.preventDefault();
 
@@ -38,3 +39,4 @@ document.getElementById("contactForm").addEventListener("submit", function (even
 
     window.location.href = mailtoLink;
 });
+
